@@ -13,7 +13,7 @@ const MainLayout: React.FC<Props> = ({ children }: any) => {
     <>
       <Head>
         <link rel="icon" href="/sharehub-logo.svg" type="image/svg" />
-        <title className="text-black">DarkMatter</title>
+        <title className="text-black">ShareHub</title>
       </Head>
       <Header />
       <Navbar />

@@ -7,10 +7,10 @@ export default function App({ Component, pageProps }: AppProps) {
   let LayoutContainer = MainLayout;
 
   return (
-    <LayoutContainer>
-      <ContextProvider>
+    <ContextProvider>
+      <LayoutContainer>
         <Component {...pageProps} />
-      </ContextProvider>
-    </LayoutContainer>
+      </LayoutContainer>
+    </ContextProvider>
   );
 }

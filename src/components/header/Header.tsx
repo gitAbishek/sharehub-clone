@@ -13,7 +13,11 @@ const Header = () => {
 
   const handleClick = () => {
     setIsOpen(true);
+    console.log("hello", isOpen);
   };
+
+  console.log("hello", isOpen);
+
 
   const handleClickClose = () => {
     setIsOpen(false);
@@ -23,7 +27,7 @@ const Header = () => {
     console.log(search, "Search");
   };
   return (
-    <div className="flex justify-between items-center py-5 px-5  md:px-10 ">
+    <div className="flex  justify-between items-center py-5 px-5  md:px-10 ">
       <div className="flex gap-10 justify-center items-center">
         <Image
           className="h-20 w-20 hidden md:flex "
@@ -62,7 +66,7 @@ const Header = () => {
 
       {isOpen ? (
         <RxCross1
-          className="text-[#093132]  flex  md:hidden    items-center text-3xl font-extrabold"
+          className="text-[#093132]  flex  md:hidden    items-center text-3xl font-extrabold "
           onClick={handleClickClose}
         />
       ) : (

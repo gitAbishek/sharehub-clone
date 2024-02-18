@@ -6,7 +6,12 @@ import MobileCustomMenu from "@/components/customComponents/MobileCustomMenu";
 import Image from "next/image";
 
 const Navbar = () => {
-  const { isOpen } = useContextStore();
+  const { isOpen, setIsOpen } = useContextStore();
+
+  const handleClick = () => {
+    setIsOpen(false);
+  }
+
 
   return (
     <>
@@ -85,7 +90,7 @@ const Navbar = () => {
           height={150}
         />
         <div className="flex flex-col justify-start text-sm  gap-8 py-20  text-gray-100 px-3">
-          <Link href="/">Home</Link>
+          <Link href="/" onClick={handleClick}>Home</Link>
 
           <MobileCustomMenu
             title="News"
@@ -143,18 +148,8 @@ const Navbar = () => {
             ]}
           />
 
-          <Link href="/">About Us</Link>
+          <Link href="/" onClick={handleClick}>About Us</Link>
         </div>
-
-        {/* <div className="hidden md:flex gap-5">
-          <button className="bg-[#093133] text-gray-200 text-sm px-8 py-2 border-none rounded-md hover:bg-[#065e4f] hover:text-white">
-            Login
-          </button>
-
-          <button className="bg-[#093133] text-gray-200 text-sm px-8 py-2 border-none rounded-md hover:bg-[#065e4f] hover:text-white">
-            SignIn
-          </button>
-        </div> */}
       </div>
     </>
   );

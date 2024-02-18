@@ -7,7 +7,7 @@ export const customStyles = {
         color: "#797979",
         display: "flex",
         justifyContent: "space-evenly",
-        background: "#F5F2F2",
+        background: "none",
         paddingTop: "20px",
         paddingBottom: "20px"
       },
@@ -18,8 +18,7 @@ export const customStyles = {
         justifyContent: "center",
         color: "#000",
         fontSize: "12px",
-        background: "#F5F2F2",
-        // borderBottom: "1px solid gray"
+        background: "none",
       },
     },
   };

@@ -3,20 +3,22 @@ import DataTable from 'react-data-table-component'
 import { investmentColumns } from '../table/InvestMentTable'
 import { INVESTMENT_LIST_DATA } from '@/constants/InvestmentList'
 import { customStyles } from '../CustomStyles/CustomDefaultStyles'
+import { loserColumns } from '../table/Losertable'
+import { LOSER_LIST_DATA } from '@/constants/LoserList'
 
 
-const Investment = () => {
+const TopLosers = () => {
   return (
     <div className='flex flex-col gap-5 w-full p-5'>
         <div className='flex flex-col gap-5'>
             <div className='flex text-black font-extrabold text-2xl'>
-            Investments
+            Top Losers
             </div>
             
             <div className=" rounded-md">
             <DataTable
-              columns={investmentColumns}
-              data={INVESTMENT_LIST_DATA}
+              columns={loserColumns}
+              data={LOSER_LIST_DATA}
               pointerOnHover
               customStyles={customStyles}
               fixedHeader={true}
@@ -28,4 +30,4 @@ const Investment = () => {
   )
 }
 
-export default Investment
+export default TopLosers

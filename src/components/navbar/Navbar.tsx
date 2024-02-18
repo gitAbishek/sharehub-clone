@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full p-5  flex justify-end bg-none md:bg-[#093133]">
+      <div className="w-full p-0 md:p-5  flex justify-end bg-none md:bg-[#093133]">
         <ul className="w-full hidden md:flex justify-between text-white uppercase text-xs font-medium">
           <Link href="/">Home</Link>
           <CustomMenu

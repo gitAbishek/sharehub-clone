@@ -13,11 +13,7 @@ const Header = () => {
 
   const handleClick = () => {
     setIsOpen(true);
-    console.log("hello", isOpen);
   };
-
-  console.log("hello", isOpen);
-
 
   const handleClickClose = () => {
     setIsOpen(false);
@@ -27,7 +23,7 @@ const Header = () => {
     console.log(search, "Search");
   };
   return (
-    <div className="flex  justify-between items-center py-5 px-5  md:px-10 ">
+    <div className="flex  justify-between items-center py-5 px-5  md:px-10 bg-[#F5F2F2]  ">
       <div className="flex gap-10 justify-center items-center">
         <Image
           className="h-20 w-20 hidden md:flex "
@@ -72,7 +68,7 @@ const Header = () => {
       ) : (
         <FiMenu
           onClick={handleClick}
-          className="text-[#093132] text-5xl flex md:hidden hover:cursor-pointer font-extrabold"
+          className="text-[#093132] text-4xl flex md:hidden hover:cursor-pointer font-extrabold"
         />
       )}
     </div>

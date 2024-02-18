@@ -16,7 +16,7 @@ interface CustomMenuProps {
 const CustomMenu: React.FC<CustomMenuProps> = ({ title, list }) => {
   return (
     <Menu>
-      <div className="relative">
+      <div className="relative ">
         <Menu.Button className="w-full flex justify-between items-center   font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 uppercase">
           {title}
           <FiChevronDown
@@ -25,7 +25,7 @@ const CustomMenu: React.FC<CustomMenuProps> = ({ title, list }) => {
           />
         </Menu.Button>
 
-        <Menu.Items className="absolute left-0 mt-5 w-56 origin-top-right divide-y divide-gray-100  bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
+        <Menu.Items className="absolute left-0 mt-5 w-56 origin-top-right divide-y divide-gray-100  bg-white shadow-lg ring-1 ring-black/5 focus:outline-none z-50">
           <div className="">
             {list.map((item, index) => (
               <React.Fragment key={item.id}>

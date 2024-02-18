@@ -24,4 +24,8 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}   
+} 
+
+.primary-color{
+  color: #093133;
+}

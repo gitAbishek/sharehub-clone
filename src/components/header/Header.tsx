@@ -47,7 +47,7 @@ const Header = () => {
       </div>
 
       <Image
-        className="hidden lg:flex h-ful  "
+        className="hidden lg:flex h-ful"
         alt="Logo"
         src="/sharehub-ads.png"
         width={200}

@@ -10,8 +10,7 @@ const Navbar = () => {
 
   const handleClick = () => {
     setIsOpen(false);
-  }
-
+  };
 
   return (
     <>
@@ -66,13 +65,6 @@ const Navbar = () => {
               { id: 2, listName: "Announcement", link: "/" },
             ]}
           />
-          <CustomMenu
-            title="Training"
-            list={[
-              { id: 1, listName: "Arthakendra", link: "/" },
-              { id: 2, listName: "Announcement", link: "/" },
-            ]}
-          />
           <Link href="/">About Us</Link>
         </ul>
       </div>
@@ -90,7 +82,9 @@ const Navbar = () => {
           height={150}
         />
         <div className="flex flex-col justify-start text-sm  gap-8 py-20  text-gray-100 px-3">
-          <Link href="/" onClick={handleClick}>Home</Link>
+          <Link href="/" onClick={handleClick}>
+            Home
+          </Link>
 
           <MobileCustomMenu
             title="News"
@@ -148,7 +142,9 @@ const Navbar = () => {
             ]}
           />
 
-          <Link href="/" onClick={handleClick}>About Us</Link>
+          <Link href="/" onClick={handleClick}>
+            About Us
+          </Link>
         </div>
       </div>
     </>
